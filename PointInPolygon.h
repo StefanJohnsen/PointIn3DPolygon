@@ -4,6 +4,7 @@
 #define POINT_IN_POLYGON
 
 #include <vector>
+#include <algorithm>
 
 namespace pip //point in polygon
 {
@@ -244,7 +245,7 @@ namespace pip //point in polygon
 
 		orientation = pip::normalize(orientation);
 
-		if( orientation.zero() )
+		if( zero(orientation) )
 		{
 			orientation.x = point.x - polygon[0].x;
 			orientation.y = point.y - polygon[0].y;
@@ -253,7 +254,7 @@ namespace pip //point in polygon
 			orientation = pip::normalize(orientation);
 		}
 
-		if( orientation.zero() ) return false;
+		if( pip::zero(orientation) ) return false;
 
 		double mus, mur;
 
