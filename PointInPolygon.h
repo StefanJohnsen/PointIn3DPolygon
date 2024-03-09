@@ -3,9 +3,7 @@
 #ifndef POINT_IN_POLYGON
 #define POINT_IN_POLYGON
 
-#include <cmath>
 #include <vector>
-#include <algorithm>
 
 namespace pip //point in polygon
 {
