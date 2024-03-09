@@ -14,3 +14,30 @@ This solution is designed to be compatible with C++11 and utilizes solely C++ St
 
 ### Usage
 Copy `PointInPolygon.h` to your project and include the file.
+
+```
+#include <iostream>
+#include "PointInPolygon.h"
+
+using namespace pip;
+
+int main()
+{
+	std::vector<Point> polygon;
+
+	polygon.emplace_back(0.0f, 0.0f, 0.0f);
+	polygon.emplace_back(2.0f, 0.0f, 0.0f);
+	polygon.emplace_back(2.0f, 2.0f, 0.0f);
+	polygon.emplace_back(0.0f, 2.0f, 0.0f);
+
+	const Point p = {1.0f , 1.0f , 0.0f};
+
+	if( pip::pointInPolygon(polygon, p) )
+		std::cout << "Point in polygon!\n";
+	else
+		std::cout << "Point is outside polygon!\n";
+
+	return 0;
+}
+```
+Replace std::vector<Point> with your class like std::vector<MyPointClass>
