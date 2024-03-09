@@ -5,7 +5,7 @@ A header-only file providing a template-based solution for determining if a poin
 - C++ 11 Standard
 - Standard Template Library (STL)
 
-This project is designed to be compatible with C++11 and utilizes solely C++ Standard Template Library (STL) components. It has been thoughtfully engineered to function independently without the need for any external libraries or dependencies. This design ensures the project remains self-contained, promoting simplicity and ease of integration into your development environment.<br>
+This solution is designed to be compatible with C++11 and utilizes solely C++ Standard Template Library (STL) components. It has been thoughtfully engineered to function independently without the need for any external libraries or dependencies. This design ensures the project remains self-contained, promoting simplicity and ease of integration into your development environment.<br>
 
 ### OS Support
 - Windows
