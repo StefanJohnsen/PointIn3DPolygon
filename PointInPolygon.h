@@ -1,5 +1,20 @@
 #pragma once
 
+/*
+  PointInPolygon.h
+
+  C++ Template Class for testing if a point is inside a polygon
+
+  Copyright (c) 2024 FalconCoding - Stefan Falk Johnsen
+
+  This software is released under the terms of the
+  GNU General Public License v3.0. Details and terms of this
+  license can be found at: https://www.gnu.org/licenses/gpl-3.0.html
+  For those who require the freedom to operate without the
+  constraints of the GPL, a commercial license can be obtaining by
+  contacting the author at stefan.johnsen@outlook.com
+ */
+
 #ifndef POINT_IN_POLYGON
 #define POINT_IN_POLYGON
 
