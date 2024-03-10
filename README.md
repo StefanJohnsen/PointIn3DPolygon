@@ -11,7 +11,7 @@ This solution is designed to be compatible with C++11 and utilizes solely C++ St
 *The stress test results for the PointInPolygon function applied to a 3D planar polygon with 180.000 test points. More test results can be found [here](Polygons-obj/README.md)*
 
 ### Supported polygons
-The PointInPolygon function works for all kinds of 3D non complex polygons, concave or convex, open or closed.
+The solution works for all kinds of 3D non complex polygons, concave or convex, open or closed.
 
 ### OS Support
 - Windows
