@@ -1,0 +1,38 @@
+newmtl red
+Kd 1.0 0.0 0.0
+
+newmtl green
+Kd 0.0 1.0 0.0
+
+newmtl blue
+Kd 0.0 0.0 1.0
+
+newmtl yellow
+Kd 1.0 1.0 0.0
+
+newmtl magenta
+Kd 1.0 0.0 1.0
+
+newmtl cyan
+Kd 0.0 1.0 1.0
+
+newmtl white
+Kd 1.0 1.0 1.0
+
+newmtl black
+Kd 0.0 0.0 0.0
+
+newmtl grey
+Kd 0.5 0.5 0.5
+
+newmtl orange
+Kd 1.0 0.5 0.0
+
+newmtl purple
+Kd 0.5 0.0 0.5
+
+newmtl brown
+Kd 0.6 0.3 0.0
+
+newmtl pink
+Kd 1.0 0.7 0.7
