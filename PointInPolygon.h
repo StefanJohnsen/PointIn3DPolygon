@@ -7,7 +7,7 @@
 
   Copyright (c) 2024 FalconCoding
 
-  Author: Stefan Johnsen
+  Author: Stefan Falk Johnsen
   Email: stefan.johnsen@outlook.com
 
   This software is released under the MIT License.
