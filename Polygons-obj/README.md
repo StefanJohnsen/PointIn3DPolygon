@@ -6,6 +6,13 @@ There are not many 3D software programs that accept only lines and points from O
 
 You can alternativly use our python viewer to visualize the OBJ files. Below are images from [pyOBJExplorer](https://github.com/StefanJohnsen/pyOBJExplorer).
 
+# 
+
+1. **Polygon Representation**:
+   - Utilize a `std::vector<Point>` container to store the polygon vertices.
+   - The `Point` class/struct, which is optional and template-based, should have public members `x`, `y`, and `z`, representing the 3D coordinates of the points. These coordinates can be of type `float` or `double`.
+   - The polygon may be open or closed. In the case of an open polygon, the last point is assumed to connect back to the first point in the list to close the polygon.
+   - Alternatively, you can use the embedded Point struct to hold the points.
 
 # Test results
 ![PointInPolygon](https://github.com/StefanJohnsen/PointInPolygon/blob/main/Polygons-obj/poly-1.png)
