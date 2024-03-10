@@ -40,4 +40,3 @@ int main()
 	return 0;
 }
 ```
-Replace std::vector<Point> with your class like std::vector<MyPointClass>
