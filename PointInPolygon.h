@@ -34,9 +34,19 @@ namespace pip //point in polygon
 
 	static constexpr float epsilon = 1e-6f;
 
+	inline bool equal(const double& a, const double& b)
+	{
+		return std::fabs(a - b) <= epsilon;
+	}
+
 	inline bool equal(const float& a, const float& b)
 	{
 		return std::fabsf(a - b) <= epsilon;
+	}
+
+	inline bool zero(const double& f)
+	{
+		return equal(f, 0.0);
 	}
 
 	inline bool zero(const float& f)
@@ -64,18 +74,22 @@ namespace pip //point in polygon
 		return true;
 	}
 
-	template <typename T = Point>
-	float magnitude(const T& p)
+	inline double magnitude(const double& x, const double& y, const double& z)
 	{
-		return sqrt(p.x * p.x + p.y * p.y + p.z * p.z);
+		return sqrt(x * x + y * y + z * z);
+	}
+
+	inline float magnitude(const float& x, const float& y, const float& z)
+	{
+		return sqrt(x * x + y * y + z * z);
 	}
 
 	template <typename T = Point>
 	float distance(const T& p, const T& q)
 	{
-		const auto dx = p.x - q.x;
-		const auto dy = p.y - q.y;
-		const auto dz = p.z - q.z;
+		const auto dx = static_cast<float>(p.x - q.x);
+		const auto dy = static_cast<float>(p.y - q.y);
+		const auto dz = static_cast<float>(p.z - q.z);
 
 		return sqrt(dx * dx + dy * dy + dz * dz);
 	}
@@ -83,19 +97,19 @@ namespace pip //point in polygon
 	template <typename T = Point>
 	T normalize(const T& p)
 	{
-		const auto m = magnitude(p);
+		const auto m = magnitude(p.x, p.y, p.z);
 
 		if( m == 0. ) return {};
 
-		return {p.x / m , p.y / m , p.z / m};
+		return { p.x / m , p.y / m , p.z / m };
 	}
 
 	template <typename T = Point>
 	double dot(const T& u, const T& v)
 	{
-		const auto dx = static_cast<double>(u.x) * static_cast<double>(v.x);
-		const auto dy = static_cast<double>(u.y) * static_cast<double>(v.y);
-		const auto dz = static_cast<double>(u.z) * static_cast<double>(v.z);
+		const auto dx = static_cast<double>(u.x * v.x);
+		const auto dy = static_cast<double>(u.y * v.y);
+		const auto dz = static_cast<double>(u.z * v.z);
 
 		return dx + dy + dz;
 	}
