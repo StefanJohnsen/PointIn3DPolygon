@@ -39,9 +39,9 @@ int main()
 	const Point p = {1.0f , 1.0f , 0.0f};
 
 	if( pip::pointInPolygon(polygon, p) )
-		std::cout << "Point in polygon!\n";
+		std::cout << "Point inside polygon!\n";
 	else
-		std::cout << "Point is outside polygon!\n";
+		std::cout << "Point outside polygon!\n";
 
 	return 0;
 }
