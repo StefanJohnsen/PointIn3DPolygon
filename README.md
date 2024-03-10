@@ -8,7 +8,7 @@ A header-only file providing a template-based solution for determining if a poin
 This solution is designed to be compatible with C++11 and utilizes solely C++ Standard Template Library (STL) components. It has been thoughtfully engineered to function independently without the need for any external libraries or dependencies. This design ensures the project remains self-contained, promoting simplicity and ease of integration into your development environment.<br>
 
 ![PointInPolygon](https://github.com/StefanJohnsen/PointInPolygon/blob/main/pictures/pic-01.png)
-*The stress test results for the PointInPolygon function applied to a 3D planar polygon with 180.000 points. More test results can be found [here](Polygons-obj/README.md)*
+*The stress test results for the PointInPolygon function applied to a 3D planar polygon with 180.000 test points. More test results can be found [here](Polygons-obj/README.md)*
 
 ### OS Support
 - Windows
