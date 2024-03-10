@@ -143,7 +143,7 @@ namespace pip //point in polygon
 
 	//https://paulbourke.net/geometry/pointlineplane/lineline.c
 	template <typename T = Point>
-	bool lineIntersect2(const T& P1, const T& V1, const T& P2, const T& V2, double& mu1, double& mu2)
+	bool lineIntersect(const T& P1, const T& V1, const T& P2, const T& V2, double& mu1, double& mu2)
 	{
 		const T v13 = {P1.x - P2.x , P1.y - P2.y , P1.z - P2.z};
 
@@ -287,7 +287,7 @@ namespace pip //point in polygon
 			u.y = p2.y - p1.y;
 			u.z = p2.z - p1.z;
 
-			if( pip::lineIntersect2<T>(p1, u, point, orientation, mus, mur) )
+			if( pip::lineIntersect(p1, u, point, orientation, mus, mur) )
 			{
 				if( mus >= 0.0 && mus <= 1.0 )
 				{
